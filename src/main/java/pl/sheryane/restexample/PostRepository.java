@@ -1,4 +1,8 @@
 package pl.sheryane.restexample;
 
-public class PostRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import pl.sheryane.restexample.model.Post;
+
+public interface PostRepository extends JpaRepository<Post, Long> {
+
 }
